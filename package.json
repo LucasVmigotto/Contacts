@@ -1,0 +1,19 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "some contacts api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Lucas Vidor Migotto",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  }
+}
