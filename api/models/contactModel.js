@@ -4,10 +4,11 @@ var Schema = mongoose.Schema
 var ContactSchema = new Schema({
   name:{
     type: String,
-    required: 'Please, inform the contact name'
+    required: 'This field cant be leave empty'
   },
   lastName: {
     type: String,
+    required: 'This fild cant be empty either'
   },
   createdDate: {
     type: Date,

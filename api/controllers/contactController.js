@@ -13,7 +13,7 @@ exports.listAllContacts=function(req, res){
 }
 
 exports.createContact=function(req, res){
-  var newContact = new Contact(res.body)
+  var newContact = new Contact(req.body)
   newContact.save(function(err, contact){
     if (err) {
       console.log(error + ' ' + err.message)
@@ -24,7 +24,7 @@ exports.createContact=function(req, res){
 }
 
 exports.readContact=function(res, req){
-  Contact.findById({_id: req.params.contactId}, function(err, contact){
+  Contact.findById(req.params.contactId, function(err, contact){
     if (err) {
       console.log(error + ' ' + err.message)
       res.send(err)
